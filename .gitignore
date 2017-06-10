@@ -118,3 +118,4 @@ build/
 tests/report/
 
 .idea
+node_modules
