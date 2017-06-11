@@ -96,3 +96,4 @@ class ModelAdmin(GuardedModelAdmin):
     ordering = ('name','created_on')
 
 admin.site.register(User, UserAdmin)
+admin.site.register(Proposal)

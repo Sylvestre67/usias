@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.apps import AppConfig
-
 
 class MainConfig(AppConfig):
 	name = 'main'
 
 	def ready(self):
-		import signals
+		import main.signals

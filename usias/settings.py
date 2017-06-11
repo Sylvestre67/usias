@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 	'main',
 	'guardian',
 	'rest_framework',
+	'django_extensions',
 ]
 
 MIDDLEWARE = [
