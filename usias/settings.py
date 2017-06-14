@@ -24,6 +24,7 @@ try:
 	is_debug = os.environ['INTERNAL_IPS']
 	DEBUG = True
 	INTERNAL_IPS = ('127.0.0.1', '0.0.0.0', )
+	EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 except KeyError:
 	DEBUG = False
 
@@ -38,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-	'main',
 	'guardian',
 	'rest_framework',
 	'django_extensions',
+	'crispy_forms',
+
+	'main',
 ]
 
 MIDDLEWARE = [
@@ -179,3 +182,5 @@ REST_FRAMEWORK = {
 	],
 	 'PAGE_SIZE': 10
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

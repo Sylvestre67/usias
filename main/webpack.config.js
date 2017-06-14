@@ -116,6 +116,8 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			// Copy directory contents to {output}/to/directory/
+			{ from: './styles/fonts/', to: '../static/fonts/'},
+			{ from: './styles/img/', to: '../static/img/'}
 		], {})
 	]
 };

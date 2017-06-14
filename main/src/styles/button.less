@@ -1,0 +1,17 @@
+@import '_colors';
+@import '_variables';
+@import '_mixins';
+
+.btn{
+	.border-radius(@radius:0px);
+}
+
+.btn-primary{
+	color: #fff;
+    background-color: @marina;
+    border-color: transparent;
+	&:hover,:focus{
+		background-color: darken(@marina,5);
+		border-color: transparent;
+	}
+}

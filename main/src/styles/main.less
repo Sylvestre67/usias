@@ -2,28 +2,26 @@
 @import './_variables';
 @import './_mixins';
 @import './typography';
+@import './navbar';
+@import './forms';
+@import './button';
+@import './alert';
 
-html{
+html,body{
 	position: relative;
 	min-height: 100%;
 	box-sizing: border-box;
+
 	background-color:@body-background !important;
+
 	color: @base-font-color !important;
+
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body{
-	padding-bottom: @footer-height;
-}
-
-footer{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	/* Set the fixed height of the footer here */
-	height: @footer-height;
-	line-height: @footer-height;
-	background-color: @marina;
+.slide{
+	margin:2em auto;
+	background-color:@white;
 }

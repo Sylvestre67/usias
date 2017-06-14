@@ -1,0 +1,36 @@
+@import './_colors';
+@import './_variables';
+@import './_mixins';
+
+.navbar{
+	background-color:@marina;
+	padding:0;
+	& .navbar-brand{
+		margin:0;
+		padding:.5em;
+		color:@white !important;
+	}
+	& .navbar-nav{
+		& > li{
+			& > a{
+				margin:0;
+				padding:1em;
+				color:@white !important;
+				& i{
+					font-size:1.1rem;
+					margin:0 .3em;
+				}
+			}
+		}
+		& .account-nav-item{
+			& .dropdown-menu{
+				top:70%;
+				left:-30px;
+				.border-radius(@radius:0);
+				& a{
+					margin:0;
+				}
+			}
+		}
+	}
+}

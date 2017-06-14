@@ -1,4 +1,4 @@
-import 'flexboxgrid/css/flexboxgrid.css';
+import 'font-awesome/css/font-awesome.css';
 import './styles/main.less';
 
 import * as d3 from "d3/index";
